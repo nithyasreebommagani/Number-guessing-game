@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Number Guessing Game</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Confetti Library -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="game">
+
+<h1>🤖 AI Number Guessing Game</h1>
+
+<p class="tag">Guess the secret number!</p>
+
+<select id="difficulty">
+<option value="easy">Easy (1-50)</option>
+<option value="medium">Medium (1-100)</option>
+<option value="hard">Hard (1-200)</option>
+</select>
+
+<input id="guessInput" type="number" placeholder="Enter your guess">
+
+<button id="guessBtn">Guess</button>
+
+<p id="message"></p>
+<p id="hint"></p>
+
+<div class="stats">
+Attempts Left: <span id="attempts"></span>
+</div>
+
+<div id="history"></div>
+
+<button id="restartBtn">Restart Game</button>
+
+<p class="score">🏆 Best Score: <span id="bestScore">0</span></p>
+
+</div>
+
+<!-- Sound Effects -->
+
+<audio id="winSound" src="sounds/win.mp3"></audio>
+<audio id="wrongSound" src="sounds/wrong.mp3"></audio>
+<audio id="loseSound" src="sounds/lose.mp3"></audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
