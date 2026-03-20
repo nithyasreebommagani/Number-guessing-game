@@ -99,4 +99,4 @@ This project was created as a small web development project to practice JavaScri
 
 ---
 
-⭐ If you like this project, feel free to fork it or improve it!
+⭐ If you like this project, feel free to fork it or improve it!!
